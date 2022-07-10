@@ -1,0 +1,6 @@
+#+title: Readme
+
+
+* About
+
+A pipeline which can take data from numerous sources via a job.  Then, it will use another job to post the data to a data source of your choosing such as Kafka, PSQL, Hive, etc. . .
