@@ -15,12 +15,17 @@ lazy val configLoader = Seq(
   "com.typesafe" % "config" % "1.4.2"
 )
 
+lazy val fs = Seq(
+  "com.lihaoyi" %% "os-lib" % "0.8.1"
+)
+
 lazy val root = (project in file("."))
   .settings(
     name := "pipeline-sim",
     libraryDependencies += scalaTest % Test,
     libraryDependencies ++= spark,
-    libraryDependencies ++= configLoader
+    libraryDependencies ++= configLoader,
+    libraryDependencies ++= fs
   )
 
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.

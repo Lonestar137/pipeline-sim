@@ -1,7 +1,7 @@
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import scala.util.{Try, Failure, Success}
-import utils.parser.ArgsParser
+import org.utils.parser.ArgsParser
 
 object ArgsParserSpec extends AnyFlatSpec with Matchers {
   "The ArgsParser.prepare function" should "return a string map kv." {
