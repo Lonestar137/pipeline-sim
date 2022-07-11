@@ -1,4 +1,4 @@
-package utils.parser
+package org.utils.context
 
 // Object which parses an Array[String] object and returns transformed variable.
 object ArgsParser {

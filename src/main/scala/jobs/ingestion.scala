@@ -1,7 +1,5 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.DataFrame
-import com.typesafe.config.ConfigFactory
-import com.typesafe.config.Config
 
 import org.utils.content.Reader
 import org.utils.content.CSVDataFrame
@@ -24,7 +22,7 @@ object IngestionJob {
 
     val Superstore: CSVDataFrame = Reader.getCSV(spark, "superstore.csv")
 
-    Superstore.df.show(10)
+    // Superstore.df.show(10)
 
   }
 
